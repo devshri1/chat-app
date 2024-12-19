@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chat-Up</title>
+</head>
+<body>
+    
+    <!-- <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div> -->
+      <!-- <img src="" alt="No image to show" id="imgShower" height="50" width="50"> -->
+      <div class="appName">
+        <p><i class="fa fa-whatsapp" aria-hidden="true" style="font-weight: bold;
+            font-size: 27px;
+            margin-right: 8px;"></i>Chat-Up</p></div>
+<section>
+    <div class="topContent">
+        <div class="utilities"></div>
+    <div class="showChats">
+        <div class="h3">
+            <h3>Your Chats</h3>
+        </div>
+        <div id="yourChats">
+
+            <!-- <div class="chats">
+                <p>Username</p>
+               
+            </div>
+            <div class="chats">
+                <p>Username</p>
+                
+            </div> -->
+        </div>
+        <div class="chatFooter">
+            
+        </div>
+       
+    </div>
+      <div class="container">
+          <div id="display">
+              <div class="displayName"><h3><span id="hamburger" onclick="hamburger();"><i class="fa fa-bars"></i></span><i class="fa fa-users"></i>Public Chat</h3></div>
+            
+            <!-- <p class="para"><span>Aman Joined the chat</span></p> -->
+            <!-- <ul class="left-list">
+                <li><span class="time">9:45 PM</span>Hello Friends This is me</li> 
+                <div class="senderName">Aman</div>
+            </ul>
+            <ul class="left-list">
+                <li><span class="time">9:45 PM</span>Hello Friends This is me</li> 
+                <div class="senderName">Aman</div>
+            </ul> -->
+            <!-- <p class="para"><span>Aman Joined the chat</span></p>
+            <ul class="right-list">
+                <div class="senderName">Aman Siddiqui</div>
+                <li>Hello Friends This is me</li>
+            </ul>
+            -->
+          </div>
+          <div class="typeMsg">
+            <div class="popup" onclick="myFunction123()"><span class="material-icons-outlined">
+                attachment
+                </span>
+                <span class="popuptext" id="myPopup"><label for="myFile">image</label><input type="file" id="myFile" name="myFile" onchange="loadFile(event)" accept="image/*"></span>
+              </div>
+                  <!-- <i class="fa-solid fa-paperclip sendingClip" id="sendingclip"><div class="options">
+                </div></i> -->
+              <input type='text'id="message" name="message" placeholder="Type your message here...">
+              <button id="button"><i class="fa fa-paper-plane" aria-hidden="true" style="padding: 7px 10px 7px 6px;
+                border-radius: 100%;
+                background: black;
+                color: white;
+                font-size: 15px;"></i></button>
+          </div>
+      </div>
+    </div>
+      <div id="ShowUsers">
+       <!-- <h3> <i class="fa fa-user-circle-o"></i>Online Users</h3>
+          <ul id="ListofOnlineUsers">
+
+          </ul> -->
+      </div>
+    </section>
+    <!-- <form action="temp.html">
+        <input type="text" name="name" class="name">
+        <input type="password" name="password" class="room">
+        <button type="submit">Submit</button>
+    </form> -->
+    <footer class="text-footer background2">
+        <div>Developed By: Aman Siddiqui </div>
+        <p>Copyright &copy; 2021 - www.chat-up-fun.herokuapp.com - All rights reserved</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/4802d6a91b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+    <script src="additional.js"></script>
+</body>
+</html>

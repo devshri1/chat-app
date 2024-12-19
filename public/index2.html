@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Chat-Up</title>
+    <style>
+      body::after {
+        content: "";
+        /* background: url(realBG.png) no-repeat fixed; */
+        background-size: cover;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to bottom right, #4453ff, #fc45ff);
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      .form {
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        width: 20%;
+        height: 289px;
+        border-radius: 9px;
+        flex-direction: column;
+      }
+
+      .form button {
+        padding: 4px 3px;
+        width: 19%;
+        background-color: #262222;
+        color: white;
+        font-weight: bolder;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+
+      .form input[type="text"]:focus {
+        outline: none;
+      }
+
+      .form input[type="text"] {
+        margin: 0 auto;
+        margin-bottom: 13px;
+        padding: 6px 6px 6px 37px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        width: 52%;
+        background-color: #f0f0f0;
+      }
+
+      .mid {
+        display: flex;
+        flex-direction: column;
+        padding-top: 71px;
+        background-color: white;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 26px;
+        box-shadow: 0 4px 5px 0 rgb(0 0 0 / 8%), 0 7px 9px 0 rgb(0 0 0 / 0%);
+        color: black;
+        background-color: #fcf9fe;
+        padding: 11px 3px;
+        border-radius: 9px;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 4px;
+        width: -webkit-fill-available;
+      }
+      @media screen and (min-width: 25px) and (max-width: 699px) {
+        .form input[type="text"] {
+          padding: 6px 6px 6px 24px;
+          width: 67%;
+        }
+        .form {
+          width: 71%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="form" action="chat.html" method="get">
+        <div class="heading">
+          <i
+            class="fa fa-whatsapp"
+            aria-hidden="true"
+            style="font-weight: bold; font-size: 27px; margin-right: 8px"
+          ></i
+          >Chat-Up
+        </div>
+        <div class="mid">
+          <input
+            type="text"
+            name="Username"
+            id="Username"
+            placeholder="Enter your username"
+            autofocus
+          />
+          <input
+            type="text"
+            name="password"
+            id="Username"
+            placeholder="Enter your password"
+            autofocus
+          />
+          <button type="submit">Enter</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
